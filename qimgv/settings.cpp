@@ -315,6 +315,7 @@ QList<QByteArray> Settings::supportedFormats() {
     if(videoPlayback())
         formats << mVideoFormatsMap.values();
     formats.removeAll("pdf");
+    formats.removeAll("cr3");
     return formats;
 }
 //------------------------------------------------------------------------------
